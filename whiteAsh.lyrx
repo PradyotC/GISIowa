@@ -1,0 +1,155 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.6.0",
+  "build" : 24783,
+  "layers" : [
+    "CIMPATH=Map/7e9eccb57d63402ba2de82148c4f6044.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "whiteAsh",
+      "uRI" : "CIMPATH=Map/7e9eccb57d63402ba2de82148c4f6044.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "whiteAsh",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{F90101CD-0729-46CC-902F-E2DAA7FE4371}"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=.\\MyProject.gdb",
+        "workspaceFactory" : "FileGDB",
+        "dataset" : "whiteAsh",
+        "datasetType" : "esriDTRasterDataset"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterClassifyColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "normalizationType" : "Nothing",
+        "classBreaks" : [
+          {
+            "type" : "CIMRasterClassBreak",
+            "upperBound" : 6,
+            "label" : "\u2264 6",
+            "color" : {
+              "type" : "CIMHSVColor",
+              "values" : [
+                244.80000000000001,
+                56.189999999999998,
+                77.609999999999999,
+                100
+              ]
+            }
+          },
+          {
+            "type" : "CIMRasterClassBreak",
+            "upperBound" : 7,
+            "label" : "\u2264 7",
+            "color" : {
+              "type" : "CIMHSVColor",
+              "values" : [
+                131.03999999999999,
+                63.710000000000001,
+                92.140000000000001,
+                100
+              ]
+            }
+          },
+          {
+            "type" : "CIMRasterClassBreak",
+            "upperBound" : 8,
+            "label" : "\u2264 8",
+            "color" : {
+              "type" : "CIMHSVColor",
+              "values" : [
+                1.3300000000000001,
+                62.130000000000003,
+                95.469999999999999,
+                100
+              ]
+            }
+          },
+          {
+            "type" : "CIMRasterClassBreak",
+            "upperBound" : 9,
+            "label" : "\u2264 9",
+            "color" : {
+              "type" : "CIMHSVColor",
+              "values" : [
+                181.56,
+                55.229999999999997,
+                54.780000000000001,
+                100
+              ]
+            }
+          }
+        ],
+        "classificationMethod" : "Manual",
+        "colorRamp" : {
+          "type" : "CIMRandomHSVColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "maxH" : 360,
+          "minS" : 33,
+          "maxS" : 66,
+          "minV" : 50,
+          "maxV" : 99,
+          "minAlpha" : 100,
+          "maxAlpha" : 100
+        },
+        "field" : "Value",
+        "hillshadeZFactor" : 1,
+        "minimumBreak" : 5.4000000953674316,
+        "showInAscendingOrder" : true
+      }
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{F90101CD-0729-46CC-902F-E2DAA7FE4371}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : true
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2-1 noBPC",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}
